@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة أفق</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+
+    <div class="contener">
+        <!-- nav section -->
+        <div class="nav">
+            <nav>
+                <div class="logo">
+                    <h1>مكتبة أفق</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#featured-books">الكتب المميزة</a></li>
+                        <li> <a href="#footere">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="icon-nav">   
+                    <div style="position: relative; display: inline-block; margin-right: 10px;">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" style="position: absolute; top: -12px; right: -10px; background-color: #E67E22; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px; font-weight: bold;">0</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="book-details">
+            <div class="text">
+                <h2 id="book-title">اسم الكتاب</h2>
+                <p class="author" id="book-author">اسم الموؤلف</p>
+                <p class="price" id="book-price" >السعر</p>
+                <p class="details" id="book-desc" >التفاصيل</p>
+                <div class="version-box">
+                    <label for="book-version">أختر النسخة :</label>
+                    <select class="select-version" id="book-version">
+                        <option value="digital">نسخة رقمية pdf</option>
+                        <option value="paper">نسخة ورقية</option>
+                    </select>
+                </div>
+                <div class="buton">
+                    <button class="btn-s" >شراء مباشر</button>
+                    <button class="btn-add" >أضف الى السلة</button>
+                </div>
+            </div>
+            <div class="imgdata">
+                <img src="1.png" alt="book image" id="book-img" >
+            </div>
+            
+        </div>
+    </div>
+    
+
+
+
+    
+
+     <!-- footer -->
+    <footer id="footere">
+        <div class="footer1">
+            <h4>جميع الحقوق محفوظة مكتبة أفق 2026</h4>
+        </div>
+        <p>الكتب هي مصدر السعادة</p>
+        <div class="footer2">
+                <button> <a href="#">اسئل افق الذكي</a></button><br>
+                <a href="#"><i class="fa-brands fa-github" ></i></a>
+                <a href="https://www.instagram.com/pov.h2"><i class="fa-brands fa-instagram" ></i></a>
+                <a href="https://www.t.me/povh2"><i class="fa-brands fa-telegram" ></i></a>
+                <a href="https://www.tiktok.com/@hamza.dev3"><i class="fa-brands fa-tiktok" ></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js" ></script>
+</body>
+</html>

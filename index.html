@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة أفق</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body  style = direction:rtl; >
+    <div class="contener">
+        <!-- nav section -->
+        <div class="nav">
+            <nav>
+                <div class="menu-toggle" id="mobile-menu">
+                     ☰
+                </div>
+                <div class="logo">
+                    <h1>مكتبة أفق</h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#featured-books">الكتب المميزة</a></li>
+                        <li> <a href="index.html#footere">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="icon-nav" style="position: relative;">
+                
+                    <div style="position: relative; display: inline-block;">
+                        <input type="text" id="search-input" placeholder="ابحث عن كتاب..." style="display: none; padding: 6px 10px; border-radius: 4px; border: 1px solid #ccc; outline: none; margin-left: 10px; width: 180px; background: #fff; color: #000;">
+                            
+                            <!-- قائمة النتائج المنسدلة تحت البحث -->
+                        <div id="search-dropdown" style="display: none; position: absolute; top: 35px; right: 0; width: 220px; background: white; border: 1px solid #ddd; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); z-index: 1000; text-align: right; max-height: 250px; overflow-y: auto;">
+                                <!-- النتائج ستظهر هنا ديناميكياً -->
+                        </div>
+                    </div>
+
+                    <i class="fa-solid fa-magnifying-glass" id="search-icon" style="cursor: pointer;"></i>
+                        
+                    <div style="position: relative; display: inline-block; margin-right: 10px;">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="cart-count" style="position: absolute; top: -12px; right: -10px; background-color: #E67E22; color: white; border-radius: 50%; padding: 2px 6px; font-size: 12px; font-weight: bold;">0</span>
+                    </div>
+                </div>
+                  
+            </nav>
+        </div>
+        <!-- part-book -->
+        <div class="part-book">
+            <h2>عالمك المعرفي يبدأ من هُنا</h2>
+            <button class="btnpart-book" > <a href="#">تصفح الكتب</a> </button>
+        </div>
+        <!-- featured-books -->
+        <div class="featured-books" id="featured-books">
+        <h2>الكتب المميزة</h2>
+        <!-- add-book -->
+        <div class="books" id="books-container">
+            <div class="book">
+                <a href="book-details.html?book=b1">
+                    <img src="2.jpg" alt="book image">
+                    <h4>فن اللامبالاة</h4>
+                    <p class="author">مارك مانسون</p>
+                    <p class="price">$ 9.99 </p></a>
+                    <button class="btn-book" >أضف الى السلة</button>
+                
+            </div>
+            
+            <div class="book">
+                <a href="book-details.html?book=b2">
+                
+                <img src="3.jpg" alt="">
+                <h4>نظــرية الفسـتق</h4>
+                <p class="author">فهد عامر الأحمدي</p>
+                <p class="price">$ 15.99 </p></a>
+                <button class="btn-book" >أضف الى السلة</button>
+            </div>
+            
+            <div class="book">
+                <a href="book-details.html?book=b3">
+                
+                <img src="1.png" alt="">
+                <h4>عدَّاء الطائرة الورقية</h4>
+                <p class="author">خالد حسيني</p>
+                <p class="price">$ 13.99 </p></a>
+                <button class="btn-book" >أضف الى السلة</button>
+            </div>
+            
+            <div class="book">
+                <a href="book-details.html?book=b4">
+                <img src="4.jpg" alt="">
+                 <h4>قوُّة عقلك الباطن</h4>
+                <p class="author">جوزيف ميرفى</p>
+                <p class="price">$ 22.99 </p></a>
+                <button class="btn-book" >أضف الى السلة</button>
+        </div>
+        </div>
+        <div id="no-results-msg" style=" display: none; text-align: center; font-size: 20px;  color: #E67E22; margin-top: 30px;  " > لاتوجد نتائج بحث... </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <footer id="footere">
+        <div class="footer1">
+            <h4>جميع الحقوق محفوظة مكتبة أفق 2026</h4>
+        </div>
+        <p>الكتب هي مصدر السعادة</p>
+        <div class="footer2">
+                <button> <a href="#">اسئل افق الذكي</a></button><br>
+                <a href="#"><i class="fa-brands fa-github" ></i></a>
+                <a href="https://www.instagram.com/pov.h2"><i class="fa-brands fa-instagram" ></i></a>
+                <a href="https://www.t.me/povh2"><i class="fa-brands fa-telegram" ></i></a>
+                <a href="https://www.tiktok.com/@hamza.dev3"><i class="fa-brands fa-tiktok" ></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js" ></script>
+</body>
+</html>
